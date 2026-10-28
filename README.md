@@ -69,11 +69,26 @@ npm run dev
 
 Open [http://localhost:5173/](http://localhost:5173/) (or the port indicated in the terminal) in your browser.
 
-### Building for Production
+### Running Desktop App (Development)
 
 ```bash
-npm run build
+# Start desktop application window
+npm run desktop:dev
 ```
+
+### Packaging Standalone Desktop Build
+
+```bash
+# Build unpacked macOS application (.app)
+npm run desktop:dir
+
+# Build complete macOS DMG installer (.dmg)
+npm run desktop:dist
+```
+
+The output artifacts are generated in the `release/` folder:
+- **Application Bundle**: `release/mac-arm64/Arcade Layout Studio.app`
+- **Installer Disk Image**: `release/Arcade Layout Studio-1.0.0-arm64.dmg`
 
 ---
 
@@ -93,3 +108,4 @@ npm run build
 - `Click + Drag`: Look around / steer viewing direction
 - `Space`: Ascend (in Flythrough mode)
 - `Shift`: Descend / fast move
+
